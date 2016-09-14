@@ -56,12 +56,23 @@ Get named expressions options:
 $named_expressions = $domDocument->getElementsByTagName('named-expressions');
 ```
 ```xml
-<table:named-range 
-  table:name="GlobalCycleData1" 
-  table:base-cell-address="$Лист1.$A$2" 
-  table:cell-range-address="$Лист1.$A$15:.$E$15" 
-  table:range-usable-as="repeat-row"
-/>
+<table:named-expressions>
+  <table:named-range 
+    table:name="GlobalCycleData1" 
+    table:base-cell-address="$Sheet1.$A$2" 
+    table:cell-range-address="$Sheet1.$A$15:.$E$15" 
+    table:range-usable-as="repeat-row"/>
+  <table:named-range 
+    table:name="LocalNameSxpression" 
+    table:base-cell-address="$Sheet1.$A$19" 
+    table:cell-range-address="$Sheet1.$A$20:.$E$20" 
+    table:range-usable-as="repeat-column"/>
+  <table:named-range 
+    table:name="NewCycle" 
+    table:base-cell-address="$Sheet1.$A$22" 
+    table:cell-range-address="$Sheet1.$A$19:.$AMJ$22" 
+    table:range-usable-as="repeat-row"/>
+</table:named-expressions>
 ```
 
 Table
