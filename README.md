@@ -163,7 +163,7 @@ Spanned cells
   <table:table-cell table:number-columns-repeated="1022"/>
 </table:table-row>
 ```
-Hidden cells
+Hidden (covered) cells under the spanned
 ```xml
 <table:covered-table-cell table:number-columns-repeated="2"/>
 ```
