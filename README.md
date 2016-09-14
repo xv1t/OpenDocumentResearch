@@ -47,7 +47,8 @@ $first_sheet = $sheets->item(0);
 $first_sheet = $domDocument                                              
   ->getElementsByTagName('table')                           
   ->item(0)
-  ->getAttribute('table:name'); 
+  
+$sheet_name = $first_sheet->getAttribute('table:name'); 
 ```
 
 Get named expressions options:
