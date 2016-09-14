@@ -81,6 +81,13 @@ Table
 Rows
 ```php
 $sheet_rows = $sheet->getElementsByTagName('table-row');
+
+//or first sheet
+$sheet_rows = $domDocument                                              
+  ->getElementsByTagName('table')                           
+  ->item(0)
+  ->getElementsByTagName('table-row');
+
 ```
 Repeat rows
 ```xml
