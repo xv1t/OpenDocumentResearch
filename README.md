@@ -167,6 +167,10 @@ Hidden (covered) cells under the spanned
 ```xml
 <table:covered-table-cell table:number-columns-repeated="2"/>
 ```
+or
+```xml
+<table:covered-table-cell/>
+```
 
 ###String cell
 ```xml
