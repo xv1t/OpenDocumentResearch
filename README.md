@@ -132,6 +132,42 @@ Repeat rows
   <table:table-cell table:style-name="CycleRow" table:number-columns-repeated="1019"/>
 </table:table-row>
 ```
+Spanned cells
+```xml
+<table:table-row table:style-name="ro2">
+  <table:table-cell 
+    table:style-name="ce2" 
+    office:value-type="string" 
+    calcext:value-type="string" 
+    table:number-columns-spanned="2" 
+    table:number-rows-spanned="5">
+  <text:p>5 row span and 2 col span</text:p>
+  </table:table-cell>
+  <table:covered-table-cell/>
+  <table:table-cell table:number-columns-repeated="1022"/>
+</table:table-row>
+<table:table-row table:style-name="ro2">
+  <table:covered-table-cell table:number-columns-repeated="2"/>
+  <table:table-cell table:number-columns-repeated="1022"/>
+</table:table-row>
+<table:table-row table:style-name="ro2">
+  <table:covered-table-cell table:number-columns-repeated="2"/>
+  <table:table-cell table:number-columns-repeated="1022"/>
+</table:table-row>
+<table:table-row table:style-name="ro2">
+  <table:covered-table-cell table:number-columns-repeated="2"/>
+  <table:table-cell table:number-columns-repeated="1022"/>
+</table:table-row>
+<table:table-row table:style-name="ro2">
+  <table:covered-table-cell table:number-columns-repeated="2"/>
+  <table:table-cell table:number-columns-repeated="1022"/>
+</table:table-row>
+```
+Hidden cells
+```xml
+<table:covered-table-cell table:number-columns-repeated="2"/>
+```
+
 ###String cell
 ```xml
 <table:table-cell 
