@@ -18,7 +18,7 @@ $domDocument->load("content.xml");
 //or
 $domDocument->loadXml( file_get_contents( "content.xml") ); 
 ```
-##Sheets
+#Sheets
 ```xml
 <office:document-content>
   <office:scripts/>
@@ -40,7 +40,7 @@ This document contain 3 sheets in sections `table:table`
 * `Sheet2`
 * `Sheet3`
 
-###Access to sheets
+##Access to sheets
 ```php
 <?php
 $sheets = $domDocument->getElementsByTagName('table');
@@ -56,7 +56,7 @@ $first_sheet = $domDocument
   
 $sheet_name = $first_sheet->getAttribute('table:name'); 
 ```
-###Named expressions
+##Named expressions
 ```php
 <?php
 $named_expressions = $domDocument->getElementsByTagName('named-expressions');
@@ -81,7 +81,7 @@ $named_expressions = $domDocument->getElementsByTagName('named-expressions');
 </table:named-expressions>
 ```
 
-##Table is a sheet
+#Table is a sheet
 ```xml
 <table:table table:name="Sheet1" table:style-name="ta1">
   <table:table-header-columns>...</table:table-header-columns>
@@ -95,7 +95,7 @@ $named_expressions = $domDocument->getElementsByTagName('named-expressions');
   <table:table-row table:style-name="ro2">...</table:table-row>
 </table:table>
 ```
-##Rows
+#Rows
 ```php
 <?php
 $sheet_rows = $sheet->getElementsByTagName('table-row');
@@ -107,7 +107,7 @@ $sheet_rows = $domDocument
   ->item(0)
   ->getElementsByTagName('table-row');
 ```
-####Repeat rows
+##Repeat rows
 ```xml
 <table:table-row 
       table:style-name="ro2" 
@@ -117,7 +117,7 @@ $sheet_rows = $domDocument
 </table:table-row>
 ```
 
-##Cells
+#Cells
 ```xml
 <table:table-row table:style-name="ro2">
   <table:table-cell table:style-name="ce4" office:value-type="string" calcext:value-type="string">
@@ -138,7 +138,7 @@ $sheet_rows = $domDocument
   <table:table-cell table:style-name="CycleRow" table:number-columns-repeated="1019"/>
 </table:table-row>
 ```
-###Spanned cells
+##Spanned cells
 ```xml
 <table:table-row table:style-name="ro2">
   <table:table-cell 
@@ -169,7 +169,7 @@ $sheet_rows = $domDocument
   <table:table-cell table:number-columns-repeated="1022"/>
 </table:table-row>
 ```
-###Hidden (covered) cells
+##Hidden (covered) cells
 This cells is under the spanned aria
 ```xml
 <table:covered-table-cell table:number-columns-repeated="2"/>
@@ -194,7 +194,7 @@ calcext:value-type | string
 </table:table-cell>
 ```
 
-###Real number cells
+##Real number cells
 
 attribute          | value
 -------------------|------
@@ -213,7 +213,7 @@ Attribute `office:value` is clear number value with dot `.`, ~~not comma~~ `,`
     <text:p>1 234,54</text:p>
 </table:table-cell>
 ```
-##Images with anchors
+#Images with anchors
 achnor | place `...`
 -------|-----
 page   | `<table:table><table:shapes>...</table:shapes></table:table>`
