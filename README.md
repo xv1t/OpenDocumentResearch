@@ -78,7 +78,7 @@ $named_expressions = $domDocument->getElementsByTagName('named-expressions');
 </table:named-expressions>
 ```
 
-##Table is a sheet
+##Table as sheet
 ```xml
 <table:table table:name="Sheet1" table:style-name="ta1">
   <table:table-header-columns>...</table:table-header-columns>
@@ -244,7 +244,7 @@ One draw frame
   </draw:image>
 </draw:frame>
 ```
-and styles block: gr1, gr2
+and styles block: `gr1`, `gr2`
 ```xml
 <office:automatic-styles>
   <style:style style:name="co1" style:family="table-column">...</style:style>
