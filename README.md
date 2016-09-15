@@ -11,6 +11,7 @@ Target file
 ```
 Create XML DOM object
 ```php
+<?php
 $domDocument = new DOMDocument;
 $domDocument->load("content.xml"); 
 
@@ -38,6 +39,7 @@ $domDocument->loadXml( file_get_contents( "content.xml") );
 ```
 ###Access to sheets
 ```php
+<?php
 $sheets = $domDocument->getElementsByTagName('table');
 
 //first sheet
@@ -53,6 +55,7 @@ $sheet_name = $first_sheet->getAttribute('table:name');
 ```
 ###Named expressions
 ```php
+<?php
 $named_expressions = $domDocument->getElementsByTagName('named-expressions');
 ```
 ```xml
@@ -91,14 +94,15 @@ $named_expressions = $domDocument->getElementsByTagName('named-expressions');
 ```
 ##Rows
 ```php
+<?php
 $sheet_rows = $sheet->getElementsByTagName('table-row');
 
 //or first sheet
+
 $sheet_rows = $domDocument                                              
   ->getElementsByTagName('table')                           
   ->item(0)
   ->getElementsByTagName('table-row');
-
 ```
 ####Repeat rows
 ```xml
