@@ -104,6 +104,11 @@ $named_expressions = $domDocument->getElementsByTagName('named-expressions');
     table:base-cell-address="$Sheet1.$A$22" 
     table:cell-range-address="$Sheet1.$A$19:.$AMJ$22" 
     table:range-usable-as="repeat-row"/>
+  <table:named-range 
+    table:name="DocumentData" 
+    table:base-cell-address="$Sheet1.$A$8" 
+    table:cell-range-address="$Sheet1.$A$8:.$AMJ$8" 
+    table:range-usable-as="repeat-row"/>
 </table:named-expressions>
 ```
 
