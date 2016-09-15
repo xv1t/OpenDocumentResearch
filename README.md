@@ -16,10 +16,8 @@ $domDocument = new DOMDocument;
 $domDocument->load("content.xml"); 
 
 //or
-
 $domDocument->loadXml( file_get_contents( "content.xml") ); 
 ```
-
 ##Sheets
 ```xml
 <office:document-content>
@@ -37,6 +35,11 @@ $domDocument->loadXml( file_get_contents( "content.xml") );
   </office:body>
 </office:document-content>
 ```
+This document contain 3 sheets in sections `table:table`
+* `Sheet1`
+* `Sheet2`
+* `Sheet3`
+
 ###Access to sheets
 ```php
 <?php
@@ -78,7 +81,7 @@ $named_expressions = $domDocument->getElementsByTagName('named-expressions');
 </table:named-expressions>
 ```
 
-##Table as sheet
+##Table is a sheet
 ```xml
 <table:table table:name="Sheet1" table:style-name="ta1">
   <table:table-header-columns>...</table:table-header-columns>
