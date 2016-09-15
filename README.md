@@ -244,3 +244,34 @@ One draw frame
   </draw:image>
 </draw:frame>
 ```
+and style block
+```xml
+<office:automatic-styles>
+  <style:style style:name="co1" style:family="table-column">...</style:style>
+  <style:style style:name="ro1" style:family="table-row">...</style:style>
+  <style:style style:name="ta1" style:family="table" style:master-page-name="Default">...</style:style>
+  <style:style style:name="gr1" style:family="graphic">
+  <style:graphic-properties draw:stroke="none" 
+    draw:fill="none" 
+    draw:textarea-horizontal-align="center" 
+    draw:textarea-vertical-align="middle" 
+    draw:color-mode="standard" 
+    draw:luminance="0%" 
+    draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0mm, 0mm, 0mm, 0mm)" draw:image-opacity="100%" 
+    style:mirror="none"/>
+  </style:style>
+  <style:style style:name="gr2" style:family="graphic">
+  <style:graphic-properties 
+    draw:stroke="none" 
+    draw:fill="none" 
+    draw:textarea-horizontal-align="center" 
+    draw:textarea-vertical-align="middle" 
+    draw:color-mode="standard" 
+    draw:luminance="0%" 
+    draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0mm, 0mm, 0mm, 0mm)" draw:image-opacity="100%" 
+    style:mirror="none" 
+    style:protect="size"/>
+  </style:style>
+  <style:style style:name="P1" style:family="paragraph">...</style:style>
+</office:automatic-styles>
+```
