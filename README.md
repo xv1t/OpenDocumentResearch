@@ -133,6 +133,31 @@ $sheet_rows = $domDocument
   ->item(0)
   ->getElementsByTagName('table-row');
 ```
+##Header row aria
+It is used in the printed area diapason. In the table
+```xml
+<table:table table:name="Sheet1" table:style-name="ta1">
+    <table:table-column table:style-name="co2" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co3" table:default-cell-style-name="Default"/>
+    <table:table-row table:style-name="ro1">...</table:table-row>
+    <table:table-row table:style-name="ro1">...</table:table-row>
+    <table:table-header-rows>...</table:table-header-rows>
+    <table:table-row table:style-name="ro1">...</table:table-row>
+    <table:table-row table:style-name="ro1">...</table:table-row>
+</table:table>
+```
+Header rows
+```xml
+    <table:table-header-rows>
+        <table:table-row table:style-name="ro1">
+            <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string">...</table:table-cell>
+            <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string">...</table:table-cell>
+            <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string">...</table:table-cell>
+            <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string">...</table:table-cell>
+        </table:table-row>
+    </table:table-header-rows>
+```
+
 ##Repeat rows
 ```xml
 <table:table-row 
