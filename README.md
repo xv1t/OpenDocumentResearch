@@ -214,7 +214,7 @@ String value are mirror of attribute *office:value* and attribute **calcext:valu
     <table:table-cell>
       <draw:frame table:end-cell-address="Sheet1.B6" table:end-x="16.79mm" table:end-y="0.53mm" draw:z-index="1" draw:name="Picture cell anchor" draw:style-name="gr1" draw:text-style-name="P1" svg:width="8.8mm" svg:height="8.49mm" svg:x="7.99mm" svg:y="1.07mm">
         <draw:image xlink:href="Pictures/10000201000000200000002089E508A2555BB893.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
-        <text:p/>
+          <text:p/>
         </draw:image>
       </draw:frame>
     </table:table-cell>
