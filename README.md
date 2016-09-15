@@ -5,11 +5,37 @@ Unzip ods
 $ unzip file.ods
 ```
 
-Target file
-```bash
-"content.xml"
+##Content of archive
 ```
-Create XML DOM object
+├── Configurations2
+│   ├── accelerator
+│   │   └── current.xml
+│   ├── floater
+│   ├── images
+│   │   └── Bitmaps
+│   ├── menubar
+│   ├── popupmenu
+│   ├── progressbar
+│   ├── statusbar
+│   ├── toolbar
+│   └── toolpanel
+├── content.xml
+├── manifest.rdf
+├── META-INF
+│   └── manifest.xml
+├── meta.xml
+├── mimetype
+├── Pictures
+│   ├── 100002010000002000000020015CF5170072DC51.png
+│   └── 10000201000000200000002089E508A2555BB893.png
+├── settings.xml
+├── styles.xml
+└── Thumbnails
+    └── thumbnail.png
+```
+We need a file `content.xml`
+
+##Create DOM object
 ```php
 <?php
 $domDocument = new DOMDocument;
