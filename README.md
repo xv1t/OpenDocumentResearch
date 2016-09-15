@@ -197,3 +197,27 @@ String value are mirror of attribute *office:value* and attribute **calcext:valu
     <text:p>1 234,54</text:p>
 </table:table-cell>
 ```
+##Images with anchors
+```xml
+<table:table table:name="Sheet1" table:style-name="ta1">
+  <table:shapes>
+    <draw:frame draw:z-index="0" draw:name="Picture page anchor" draw:style-name="gr1" draw:text-style-name="P1" svg:width="8.8mm" svg:height="8.49mm" svg:x="13.21mm" svg:y="4.51mm">
+      <draw:image xlink:href="Pictures/100002010000002000000020015CF5170072DC51.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+        <text:p/>
+      </draw:image>
+    </draw:frame>
+  </table:shapes>
+  <table:table-column table:style-name="co1" table:number-columns-repeated="2" table:default-cell-style-name="Default"/>
+  <table:table-row table:style-name="ro1" table:number-rows-repeated="3">...</table:table-row>
+  <table:table-row table:style-name="ro1">
+    <table:table-cell/>
+    <table:table-cell>
+      <draw:frame table:end-cell-address="Sheet1.B6" table:end-x="16.79mm" table:end-y="0.53mm" draw:z-index="1" draw:name="Picture cell anchor" draw:style-name="gr1" draw:text-style-name="P1" svg:width="8.8mm" svg:height="8.49mm" svg:x="7.99mm" svg:y="1.07mm">
+        <draw:image xlink:href="Pictures/10000201000000200000002089E508A2555BB893.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+        <text:p/>
+        </draw:image>
+      </draw:frame>
+    </table:table-cell>
+  </table:table-row>
+</table:table>
+```
