@@ -244,7 +244,7 @@ One draw frame
   </draw:image>
 </draw:frame>
 ```
-and style block
+and styles block: gr1, gr2
 ```xml
 <office:automatic-styles>
   <style:style style:name="co1" style:family="table-column">...</style:style>
