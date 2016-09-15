@@ -201,7 +201,7 @@ String value are mirror of attribute *office:value* and attribute **calcext:valu
 ```xml
 <table:table table:name="Sheet1" table:style-name="ta1">
   <table:shapes>
-    <draw:frame draw:z-index="0" draw:name="Picture page anchor" draw:style-name="gr1" draw:text-style-name="P1" svg:width="8.8mm" svg:height="8.49mm" svg:x="13.21mm" svg:y="4.51mm">
+    <draw:frame draw:name="Picture page anchor" draw:z-index="0" draw:style-name="gr1" draw:text-style-name="P1" svg:width="8.8mm" svg:height="8.49mm" svg:x="13.21mm" svg:y="4.51mm">
       <draw:image xlink:href="Pictures/100002010000002000000020015CF5170072DC51.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
         <text:p/>
       </draw:image>
@@ -212,7 +212,7 @@ String value are mirror of attribute *office:value* and attribute **calcext:valu
   <table:table-row table:style-name="ro1">
     <table:table-cell/>
     <table:table-cell>
-      <draw:frame table:end-cell-address="Sheet1.B6" table:end-x="16.79mm" table:end-y="0.53mm" draw:z-index="1" draw:name="Picture cell anchor" draw:style-name="gr1" draw:text-style-name="P1" svg:width="8.8mm" svg:height="8.49mm" svg:x="7.99mm" svg:y="1.07mm">
+      <draw:frame draw:name="Picture cell anchor" table:end-cell-address="Sheet1.B6" table:end-x="16.79mm" table:end-y="0.53mm" draw:z-index="1" draw:style-name="gr1" draw:text-style-name="P1" svg:width="8.8mm" svg:height="8.49mm" svg:x="7.99mm" svg:y="1.07mm">
         <draw:image xlink:href="Pictures/10000201000000200000002089E508A2555BB893.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
           <text:p/>
         </draw:image>
@@ -244,7 +244,10 @@ One draw frame
   </draw:image>
 </draw:frame>
 ```
-and styles block: `gr1`, `gr2`
+and styles block: 
+* `gr1`
+* `gr2`
+
 ```xml
 <office:automatic-styles>
   <style:style style:name="co1" style:family="table-column">...</style:style>
@@ -287,3 +290,4 @@ and styles block: `gr1`, `gr2`
   <style:style style:name="P1" style:family="paragraph">...</style:style>
 </office:automatic-styles>
 ```
+
