@@ -225,7 +225,7 @@ calcext:value-type | string
 attribute          | value   | comment
 -------------------|---------|--------
 office:value-type  | float   |
-office:value       | 1234.54 | Only with dot, not a comma ~~1 234,54~~
+office:value       | 1234.54 | Only with dot, without comma or spaces ~~1 234,54~~
 calcext:value-type | float   |
 
 ```xml
