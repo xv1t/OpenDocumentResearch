@@ -1,5 +1,5 @@
 # OpenDocumentResearch with PHP XML DOMDocument
-
+#Enter to file
 Unzip ods 
 ```bash
 $ unzip file.ods
@@ -19,7 +19,7 @@ $domDocument->load("content.xml");
 $domDocument->loadXml( file_get_contents( "content.xml") ); 
 ```
 
-Sheets tree
+##Sheets
 ```xml
 <office:document-content>
   <office:scripts/>
@@ -28,14 +28,15 @@ Sheets tree
   <office:body>
     <office:spreadsheet>
       <table:calculation-settings table:automatic-find-labels="false"/>
-      <table:table table:name="Лист1" table:style-name="ta1">...</table:table>
+      <table:table table:name="Sheet1" table:style-name="ta1">...</table:table>
+      <table:table table:name="Sheet2" table:style-name="ta1">...</table:table>
+      <table:table table:name="Sheet3" table:style-name="ta1">...</table:table>
       <table:named-expressions>...</table:named-expressions>
     </office:spreadsheet>
   </office:body>
 </office:document-content>
 ```
-
-Get sheets
+###Access to sheets
 ```php
 $sheets = $domDocument->getElementsByTagName('table');
 
@@ -50,8 +51,7 @@ $first_sheet = $domDocument
   
 $sheet_name = $first_sheet->getAttribute('table:name'); 
 ```
-
-Get named expressions options:
+###Named expressions
 ```php
 $named_expressions = $domDocument->getElementsByTagName('named-expressions');
 ```
@@ -75,9 +75,9 @@ $named_expressions = $domDocument->getElementsByTagName('named-expressions');
 </table:named-expressions>
 ```
 
-Table
+##Table is a sheet
 ```xml
-<table:table table:name="Лист1" table:style-name="ta1">
+<table:table table:name="Sheet1" table:style-name="ta1">
   <table:table-header-columns>...</table:table-header-columns>
   <table:table-column table:style-name="co1"table:default-cell-style-name="Default"/>
   <table:table-row table:style-name="ro1">...</table:table-row>
@@ -89,8 +89,7 @@ Table
   <table:table-row table:style-name="ro2">...</table:table-row>
 </table:table>
 ```
-
-Rows
+##Rows
 ```php
 $sheet_rows = $sheet->getElementsByTagName('table-row');
 
@@ -101,7 +100,7 @@ $sheet_rows = $domDocument
   ->getElementsByTagName('table-row');
 
 ```
-Repeat rows
+####Repeat rows
 ```xml
 <table:table-row 
       table:style-name="ro2" 
@@ -132,7 +131,7 @@ Repeat rows
   <table:table-cell table:style-name="CycleRow" table:number-columns-repeated="1019"/>
 </table:table-row>
 ```
-Spanned cells
+###Spanned cells
 ```xml
 <table:table-row table:style-name="ro2">
   <table:table-cell 
