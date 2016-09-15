@@ -162,7 +162,8 @@ $sheet_rows = $domDocument
   <table:table-cell table:number-columns-repeated="1022"/>
 </table:table-row>
 ```
-Hidden (covered) cells under the spanned
+###Hidden (covered) cells
+This cells is under the spanned aria
 ```xml
 <table:covered-table-cell table:number-columns-repeated="2"/>
 ```
