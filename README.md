@@ -222,13 +222,11 @@ calcext:value-type | string
 
 ##Real number cells
 
-attribute          | value
--------------------|------
-office:value-type  | float
-office:value       | 1234.54
-calcext:value-type | float
-
-Attribute `office:value` is clear number value with dot `.`, ~~not comma~~ `,`
+attribute          | value   | comment
+-------------------|---------|--------
+office:value-type  | float   |
+office:value       | 1234.54 | Only with dot, not a comma ~~1 234,54~~
+calcext:value-type | float   |
 
 ```xml
 <table:table-cell 
