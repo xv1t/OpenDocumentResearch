@@ -177,6 +177,11 @@ or
 ```
 
 ###String cell
+attribute          |value
+-------------------|------
+office:value-type  | string
+calcext:value-type | string
+
 ```xml
 <table:table-cell 
       table:style-name="ce4" 
@@ -187,7 +192,15 @@ or
 ```
 
 ###Real number cells
-String value are mirror of attribute *office:value* and attribute **calcext:value-type** set to "float"
+
+attribute          | value
+-------------------|------
+office:value-type  | float
+office:value       | 1234.54
+calcext:value-type | float
+
+Attribute `office:value` is clear number value with dot `.`, ~~not comma~~ `,`
+
 ```xml
 <table:table-cell 
         table:style-name="ce6" 
@@ -198,6 +211,11 @@ String value are mirror of attribute *office:value* and attribute **calcext:valu
 </table:table-cell>
 ```
 ##Images with anchors
+achnor | place `...`
+-------|-----
+page   | `<table:table><table:shapes>...</table:shapes></table:table>`
+cell   | `<table:table><table:table-row><table:table-cell>...</table:table-cell>`
+
 ```xml
 <table:table table:name="Sheet1" table:style-name="ta1">
   <table:shapes>
