@@ -235,7 +235,11 @@ One draw frame
     svg:height="8.49mm" 
     svg:x="7.99mm" 
     svg:y="1.07mm">
-  <draw:image xlink:href="Pictures/10000201000000200000002089E508A2555BB893.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+  <draw:image 
+      xlink:href="Pictures/10000201000000200000002089E508A2555BB893.png" 
+      xlink:type="simple" 
+      xlink:show="embed" 
+      xlink:actuate="onLoad">
     <text:p/>
   </draw:image>
 </draw:frame>
