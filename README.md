@@ -103,7 +103,7 @@ $named_expressions = $domDocument->getElementsByTagName('named-expressions');
     table:name="NewCycle" 
     table:base-cell-address="$Sheet1.$A$22" 
     table:cell-range-address="$Sheet1.$A$19:.$AMJ$22" 
-    table:range-usable-as="repeat-row"/>
+    table:range-usable-as="repeat-row repeat-column print-range filter"/>
   <table:named-range 
     table:name="DocumentData" 
     table:base-cell-address="$Sheet1.$A$8" 
