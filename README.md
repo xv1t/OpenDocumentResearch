@@ -234,6 +234,8 @@ or
 ```xml
 <table:covered-table-cell/>
 ```
+## Cell types
+[OASIS Open Document manual: 19.385 office:value-type](http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#__RefHeading__1417680_253892949)
 
 ###String cell
 attribute          |value
