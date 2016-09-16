@@ -279,6 +279,25 @@ calcext:value-type | float   |
     <text:p>TRUE</text:p>
 </table:table-cell>
 ```
+###Format text cell
+```xml
+<table:table-cell office:value-type="string" calcext:value-type="string">
+    <text:p>
+        normal
+        <text:span text:style-name="T1">italic</text:span>
+        <text:span text:style-name="T1">bold</text:span>
+        <text:span text:style-name="T2">undersore</text:span>
+    </text:p>
+    <text:p>
+        Line 2
+        <text:span text:style-name="T1">bold</text:span>
+    </text:p>
+    <text:p>
+        Line 3
+        <text:span text:style-name="T3">italic</text:span>
+    </text:p>
+</table:table-cell>
+```
 
 #Images with anchors
 achnor | place `...`
