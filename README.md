@@ -284,7 +284,7 @@ calcext:value-type | float   |
 <table:table-cell office:value-type="string" calcext:value-type="string">
     <text:p>
         normal
-        <text:span text:style-name="T1">italic</text:span>
+        <text:span text:style-name="T3">italic</text:span>
         <text:span text:style-name="T1">bold</text:span>
         <text:span text:style-name="T2">undersore</text:span>
     </text:p>
