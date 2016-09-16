@@ -267,6 +267,17 @@ calcext:value-type | float   |
     <text:p>1 234,54</text:p>
 </table:table-cell>
 ```
+##Boolean cell
+```xml
+<table:table-cell 
+        table:style-name="ce7" 
+        office:value-type="boolean" 
+        office:boolean-value="true" 
+        calcext:value-type="boolean">
+    <text:p>TRUE</text:p>
+</table:table-cell>
+```
+
 #Images with anchors
 achnor | place `...`
 -------|-----
