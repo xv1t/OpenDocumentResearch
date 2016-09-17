@@ -408,4 +408,16 @@ and styles block:
     </svg:desc>
 </draw:frame>
 ```
-
+### Image with 0x0 pixels
+Attributes `svg:width` and `svg:height` set to `0.01mm` and image be a hiding from page
+```xml
+<draw:frame draw:z-index="2" draw:name="ImageNULL" draw:style-name="gr1" draw:text-style-name="P1" 
+    svg:width="0.01mm" 
+    svg:height="0.01mm" 
+    svg:x="135.46mm" 
+    svg:y="103.58mm">
+        <draw:image xlink:href="Pictures/100002010000008000000080CDFEB8A6BBCE3321.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+        <text:p/>
+        </draw:image>
+</draw:frame>
+```
