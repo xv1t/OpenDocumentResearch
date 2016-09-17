@@ -396,4 +396,16 @@ and styles block:
   <style:style style:name="P1" style:family="paragraph">...</style:style>
 </office:automatic-styles>
 ```
+### Image with description
+```xml
+<draw:frame table:end-cell-address="Sheet1.E23" table:end-x="27.94mm" table:end-y="1.39mm" draw:z-index="1" draw:name="ImageDisabledDB" draw:style-name="gr1" draw:text-style-name="P1" svg:width="18.94mm" svg:height="19.45mm" svg:x="9mm" svg:y="0.01mm">
+    <draw:image xlink:href="Pictures/100002010000008000000080CDFEB8A6BBCE3321.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+        <text:p/>
+    </draw:image>
+    <svg:title>conditions</svg:title>
+    <svg:desc>
+        !empty($data['Report']['disabled']) AND $data['Report']['disabled'] === true
+    </svg:desc>
+</draw:frame>
+```
 
