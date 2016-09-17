@@ -421,3 +421,15 @@ Attributes `svg:width` and `svg:height` set to `0.01mm` and image be a hiding fr
         </draw:image>
 </draw:frame>
 ```
+### Delete image by name
+Name of picture in LibreOffice or OpenOffice set up by GUI in Calc
+```php
+<?php
+$image_name = "Picture 1";
+foreach ($domDocument->getElementsByTagName('frame') as $frame){
+    if ($frame->getAttribute('draw:name') == $image_name){
+        $frame->parentNode->removeChild($frame);
+    }
+}   
+```
+
