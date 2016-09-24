@@ -309,6 +309,7 @@ calcext:value-type | float   |
 </table:table-cell>
 ```
 ##Cell Formula
+[19.642 table:formula](http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#__RefHeading__1418416_253892949)
 ```xml
 <table:table-cell 
         table:formula="of:=[.E10]*[.D10]" 
