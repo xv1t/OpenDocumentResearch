@@ -278,6 +278,17 @@ calcext:value-type | float   |
     <text:p>TRUE</text:p>
 </table:table-cell>
 ```
+## Cell annotation
+```xml
+<table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string">
+    <office:annotation draw:style-name="gr3" draw:text-style-name="P3" svg:width="65.42mm" svg:height="9.91mm" svg:x="125.3mm" svg:y="26.41mm" draw:caption-point-x="-6.1mm" draw:caption-point-y="15.1mm">
+        <dc:date>2016-09-23T00:00:00</dc:date>
+        <text:p text:style-name="P2">Annotation text there</text:p>
+    </office:annotation>
+    <text:p>Cell value</text:p>
+</table:table-cell>
+```
+
 ##Format text cell
 ```xml
 <table:table-cell office:value-type="string" calcext:value-type="string">
