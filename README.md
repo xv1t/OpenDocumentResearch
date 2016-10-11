@@ -165,6 +165,7 @@ Header rows
 ```
 
 ##Repeat rows
+Check the attr `table:number-rows-repeated`
 ```xml
 <table:table-row 
       table:style-name="ro2" 
@@ -196,6 +197,9 @@ Header rows
 </table:table-row>
 ```
 ##Spanned cells
+
+Attributes: `table:number-columns-spanned`, `table:number-rows-spanned`
+
 ```xml
 <table:table-row table:style-name="ro2">
   <table:table-cell 
