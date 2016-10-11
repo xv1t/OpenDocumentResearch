@@ -139,3 +139,24 @@ Para with `P2`
 ```xml
 <text:p text:style-name="P2">Page three</text:p>
 ```
+
+## Frame: text-box
+See on the attr `text:anchor-type`
+```xml
+<text:p text:style-name="P1">
+  <draw:frame draw:style-name="fr1" draw:name="Books" text:anchor-type="paragraph" svg:x="0.624cm" svg:y="0.243cm" svg:width="8.059cm" draw:z-index="2">
+    <draw:text-box fo:min-height="2.976cm">
+      <text:p text:style-name="P15">
+      <draw:frame draw:style-name="fr4" draw:name="Изображение3" text:anchor-type="paragraph" svg:x="6.216cm" svg:y="0.132cm" svg:width="1.259cm" svg:height="1.259cm" draw:z-index="3">
+        <draw:image xlink:href="Pictures/100002010000003000000030FD13D2DACAC54C2C.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
+      </draw:frame>
+      Name: [Book.name]
+      </text:p>
+      <text:p text:style-name="P15">Author: [Book.author]</text:p>
+      <text:p text:style-name="P15"/>
+      <text:p text:style-name="P15">Pages: [Book.pages]</text:p>
+      <text:p text:style-name="P15"/>
+    </draw:text-box>
+  </draw:frame>
+</text:p>
+```
