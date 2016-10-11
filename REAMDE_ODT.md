@@ -94,6 +94,34 @@ Empty line
   </draw:frame>
 </text:p>
 ```
+
+### Image anchor as char
+```xml
+<style:style style:name="fr2" style:family="graphic" style:parent-style-name="Graphics">
+  <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="center" style:horizontal-rel="paragraph" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
+</style:style>
+```
+Attribute `text:anchor-type` = `as-char`
+```xml
+<text:p text:style-name="P1">
+  <draw:frame draw:style-name="fr2" draw:name="Изображение2" text:anchor-type="as-char" svg:width="3.614cm" svg:height="3.614cm" draw:z-index="1">
+    <draw:image xlink:href="Pictures/1000020100000030000000308FCEF0E25987FC0B.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
+  </draw:frame>
+</text:p>
+```
+
+## Image anchor to para
+Attribute `text:anchor-type` = `paragraph`
+```xml
+<text:p text:style-name="P1">
+  <draw:frame draw:style-name="fr1" draw:name="Изображение1" text:anchor-type="paragraph" svg:width="0.903cm" svg:height="0.903cm" draw:z-index="0">
+    <draw:image xlink:href="Pictures/100002010000003000000030D32A68C399F720AB.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
+  </draw:frame>
+  Para1
+</text:p>
+```
+
+
 ## Page breaks
 Styles section `P2`
 ```xml
